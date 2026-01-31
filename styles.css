@@ -42,8 +42,20 @@ a {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-weight: 700;
   font-size: 1.1rem;
+  color: var(--text);
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
 }
 
 .nav-links {
@@ -106,6 +118,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
 
 .primary-button {
@@ -290,6 +303,12 @@ a {
   border-radius: 24px;
   margin: 0 6vw 80px;
   padding: 48px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .cta p {
