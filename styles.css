@@ -144,9 +144,10 @@ a {
 
 .hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-wrap: nowrap;
+  gap: 14px;
   margin-bottom: 28px;
+  align-items: center;
 }
 
 .primary-button,
@@ -172,8 +173,30 @@ a {
 
 .secondary-button {
   background: white;
-  border: 1px solid var(--border);
-  color: var(--text);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.secondary-button:hover {
+  background: rgba(118, 110, 233, 0.1);
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.store-badge img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .store-badges {
@@ -305,6 +328,14 @@ a {
 
 .converter-section {
   padding-top: 60px;
+}
+
+.converter-grid-highlight {
+  margin-bottom: 40px;
+}
+
+.converter-copy {
+  text-align: center;
 }
 
 .converter-grid {
@@ -491,8 +522,9 @@ a {
 
 .cta-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  flex-wrap: nowrap;
+  gap: 14px;
+  align-items: center;
 }
 
 .cta p {
@@ -537,6 +569,16 @@ footer p {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-actions,
+  .cta-actions,
+  .store-badges {
+    flex-wrap: wrap;
+  }
+
+  .converter-copy {
+    text-align: left;
   }
 
   .converter-grid {
