@@ -199,6 +199,24 @@ a {
   display: block;
 }
 
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.store-badge img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .hero-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
