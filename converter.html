@@ -147,7 +147,7 @@
           const blobUrl = URL.createObjectURL(fileBlob);
           const link = document.createElement("a");
           link.href = blobUrl;
-          link.download = "ai2word.docx";
+          link.download = `ai2word_${Date.now()}.docx`;
           document.body.appendChild(link);
           link.click();
           link.remove();

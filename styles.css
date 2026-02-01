@@ -144,7 +144,7 @@ a {
 
 .hero-actions {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 28px;
   align-items: center;
@@ -159,6 +159,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  line-height: 1;
+  min-height: 46px;
+  white-space: nowrap;
 }
 
 .primary-button {
@@ -184,24 +187,6 @@ a {
 .store-badges {
   display: flex;
   flex-wrap: nowrap;
-  gap: 12px;
-  align-items: center;
-}
-
-.store-badge {
-  display: inline-flex;
-  align-items: center;
-}
-
-.store-badge img {
-  height: 44px;
-  width: auto;
-  display: block;
-}
-
-.store-badges {
-  display: flex;
-  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
 }
@@ -522,7 +507,7 @@ a {
 
 .cta-actions {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 14px;
   align-items: center;
 }
@@ -569,12 +554,6 @@ footer p {
   .nav {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .hero-actions,
-  .cta-actions,
-  .store-badges {
-    flex-wrap: wrap;
   }
 
   .converter-copy {
