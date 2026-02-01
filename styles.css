@@ -3,8 +3,8 @@
   --bg: #f8f9fb;
   --text: #111827;
   --muted: #5f6b7a;
-  --primary: #2452f4;
-  --primary-dark: #1d3edb;
+  --primary: #766ee9;
+  --primary-dark: #5f57d8;
   --card: #ffffff;
   --border: rgba(15, 23, 42, 0.1);
   --accent: #eef2ff;
@@ -135,6 +135,24 @@ a {
   background: white;
   border: 1px solid var(--border);
   color: var(--text);
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.store-badge img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .hero-highlights {
@@ -340,6 +358,12 @@ a {
 .cta p {
   color: rgba(255, 255, 255, 0.85);
   max-width: 520px;
+}
+
+.cta .cta-subhead {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 12px;
+  font-size: 0.98rem;
 }
 
 footer {
