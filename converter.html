@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Markdown to Word Converter</title>
+    <link
+      rel="icon"
+      href="https://7365-seekservice-9gkeeztlfcb2a6d4-1301441002.tcb.qcloud.la/logo128-main.png?sign=91a44f82a4d02e41f3d0ae887a38d1a4&t=1769847241"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero converter-hero">
+      <nav class="nav">
+        <div class="logo">
+          <img
+            src="https://7365-seekservice-9gkeeztlfcb2a6d4-1301441002.tcb.qcloud.la/ai2word_icon.png?sign=c99882cadaaf3a16b8267b5e173eb190&t=1769842865"
+            alt="ChatGPT Markdown Exporter logo"
+          />
+          <span>ChatGPT Markdown Exporter</span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a class="nav-cta" href="#converter">Start Converting</a>
+        </div>
+      </nav>
+      <div class="converter-hero-content">
+        <div>
+          <p class="eyebrow">AI Markdown to Word</p>
+          <h1>Convert ChatGPT, Gemini, Grok, and DeepSeek Markdown into polished Word files.</h1>
+          <p class="subhead">
+            Paste your AI-generated Markdown and export a Word document with formulas, formatting,
+            and structure preserved exactly as you wrote them.
+          </p>
+        </div>
+        <div class="converter-card">
+          <div class="converter-card-title">How it works</div>
+          <ul>
+            <li>Paste Markdown from your favorite AI assistant.</li>
+            <li>Click export to generate a Word document.</li>
+            <li>Download instantly with a single click.</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="converter" class="section converter-section">
+        <div class="converter-grid converter-grid-highlight">
+          <div class="converter-input">
+            <label for="markdownInput">Markdown content</label>
+            <textarea
+              id="markdownInput"
+              placeholder="# Paste your Markdown here\n\n- Supports tables, math formulas, and code blocks\n- Works with ChatGPT, Gemini, Grok, and DeepSeek\n"
+            ></textarea>
+          </div>
+          <div class="converter-actions">
+            <button class="primary-button" id="exportBtn" type="button">Export Word Document</button>
+            <p class="converter-note">
+              The converter will generate a .docx file based on your Markdown content.
+            </p>
+            <div class="converter-status" id="statusMessage" role="status"></div>
+          </div>
+        </div>
+        <div class="section-heading converter-copy">
+          <h2>AI Markdown Converter</h2>
+          <p>Turn AI conversation exports into share-ready Word documents in seconds.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="loading-overlay" id="loadingOverlay" aria-live="polite" aria-busy="true">
+      <div class="spinner"></div>
+      <p>Generating your Word document...</p>
+    </div>
+
+    <footer>
+      <div>
+        <h3>ChatGPT Markdown Exporter</h3>
+        <p>Math Formula Ready — Export to Word, PDF, and Excel with confidence.</p>
+        <p class="developer-name">Built by WhaleAI Studio.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#converter">Convert</a>
+      </div>
+    </footer>
+
+    <script>
+      const exportBtn = document.getElementById("exportBtn");
+      const markdownInput = document.getElementById("markdownInput");
+      const loadingOverlay = document.getElementById("loadingOverlay");
+      const statusMessage = document.getElementById("statusMessage");
+
+      const setStatus = (message, isError = false) => {
+        statusMessage.textContent = message;
+        statusMessage.classList.toggle("is-error", isError);
+      };
+
+      const toggleLoading = (isLoading) => {
+        loadingOverlay.classList.toggle("is-visible", isLoading);
+      };
+
+      exportBtn.addEventListener("click", async () => {
+        const content = markdownInput.value.trim();
+
+        if (!content) {
+          setStatus("Please paste Markdown content before exporting.", true);
+          return;
+        }
+
+        setStatus("");
+        toggleLoading(true);
+
+        try {
+          const response = await fetch(
+            "https://seekservice-9gkeeztlfcb2a6d4-1301441002.ap-shanghai.app.tcloudbase.com/pc2word",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                content,
+                modeId: "ai2word",
+              }),
+            }
+          );
+
+          const result = await response.json();
+
+          if (result.code !== 0 || !result.doc_url) {
+            setStatus("Export failed. Please try again later.", true);
+            toggleLoading(false);
+            return;
+          }
+
+          const fileResponse = await fetch(result.doc_url);
+          const fileBlob = await fileResponse.blob();
+          const blobUrl = URL.createObjectURL(fileBlob);
+          const link = document.createElement("a");
+          link.href = blobUrl;
+          link.download = "ai2word.docx";
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(blobUrl);
+          setStatus("Your Word document is ready and downloading.");
+        } catch (error) {
+          setStatus("Network error. Please check your connection and retry.", true);
+        } finally {
+          toggleLoading(false);
+        }
+      });
+    </script>
+  </body>
+</html>
