@@ -360,6 +360,12 @@ a {
   max-width: 520px;
 }
 
+.cta .cta-subhead {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 12px;
+  font-size: 0.98rem;
+}
+
 footer {
   background: #0f172a;
   color: white;
