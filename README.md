@@ -13,7 +13,7 @@
 
 ## 📖 简介
 
-**AI 转换助手** 是一款专业的AI文案转换工具，解决 AI 生成内容（Markdown、LaTeX 公式、Mermaid 流程图等）复制到 Word 时出现的格式乱码、公式错乱等问题。只需粘贴或上传 AI 回复内容，即可快速生成排版工整的 Word、PDF 或 Excel 文档，适用于论文写作、科研报告、技术文档、策划方案等场景。
+**AI 转换助手** 是一款专业的AI对话导出工具，解决 AI 生成内容（Markdown、LaTeX 公式、Mermaid 流程图等）复制到 Word 时出现的格式乱码、公式错乱等问题。只需粘贴或上传 AI 回复内容，即可快速生成排版工整的 Word、PDF 或 Excel 文档，适用于论文写作、科研报告、技术文档、策划方案等场景。
 
 ---
 
@@ -64,7 +64,7 @@
 
 ## 📱 多端支持
 
-- 🌐 **网页端**：直接访问 [www.ai2word.chat](https://www.aitoword.chat/)
+- 🌐 **网页端**：直接访问 [www.aitoword.chat](https://www.aitoword.chat/)
 - 📲 **App 下载**：应用市场搜索“AI2Word”，或直接访问 [AI2Word App](https://apps.apple.com/dz/app/ai2word/id6753907237)
 - 🧩 **小程序**：微信搜索“AI转换助手”
 - 🔌 **浏览器插件**：支持 Chrome / Edge 等 Chromium 内核浏览器
