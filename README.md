@@ -128,3 +128,136 @@ AI 转换助手会自动提取文案中的表格。如果原文不包含标准�
 
 微信小程序预览可能不支持复杂公式，请使用 WPS Office 或分享到电脑端查看。
 </details>
+
+---
+
+# 🚀 AI Conversion Assistant
+
+> **One-click export of AI conversations to Word, PDF, and Excel**  
+> Compatible with DeepSeek, Doubao, ChatGPT, Gemini, and other mainstream AI platforms  
+> Perfect support for LaTeX math formulas, Mermaid flowcharts, and Markdown tables
+
+[![Web](https://img.shields.io/badge/Web-Online%20Use-2ea44f)](https://www.aiwhaler.com/)
+[![Documentation](https://img.shields.io/badge/Docs-Help%20Center-blue)](https://www.aiwhaler.com/help/)
+[![Plugin](https://img.shields.io/badge/Plugin-Install%20Now-orange)](https://www.aiwhaler.com/plugin/)
+[![Privacy](https://img.shields.io/badge/Privacy-Secure%20Encryption-brightgreen)](https://www.aiwhaler.com/pp/)
+
+---
+
+## 📖 Introduction
+
+**AI Conversion Assistant** is a professional AI conversation export tool that solves problems such as formatting errors and garbled formulas when copying AI-generated content (Markdown, LaTeX formulas, Mermaid flowcharts, etc.) into Word. Simply paste or upload the AI response, and you can quickly generate well-formatted Word, PDF, or Excel documents. Ideal for thesis writing, research reports, technical documentation, planning proposals, and more.
+
+---
+
+## ✨ Key Features
+
+- **Full AI Platform Compatibility** – Supports DeepSeek, Doubao, Kimi, Qwen, ChatGPT, Gemini, Grok, and other mainstream AI platforms
+- **Perfect LaTeX Formula Conversion** – Math, physics, and chemistry formulas → Editable Word formulas, no more garbled text
+- **Mermaid Flowchart Support** – Automatically renders various flowcharts, sequence diagrams, Gantt charts, etc.
+- **Multiple Export Formats** – One-click export to `.docx` / `.pdf` / `.xlsx` files
+- **Cross-Platform** – Web, App, WeChat Mini Program, and browser plugins – use anytime, anywhere
+- **Privacy & Security** – Encrypted data storage, users can permanently delete their files at any time
+- **Professional Technical Support** – Expert team continuously iterates, responds to issues within 1 business day
+
+---
+
+## 🔧 Compatibility Assessment
+
+As of February 2026, the Markdown-to-Word compatibility assessment for mainstream AI platforms is as follows:
+
+| AI Platform     | Markdown (no formulas) | Markdown (with formulas) | Markdown (with Mermaid) | Markdown (no Mermaid) |
+|-----------------|------------------------|--------------------------|-------------------------|-----------------------|
+| DeepSeek        | ✅ Full support        | ✅ Full support          | ✅ Full support         | ✅ Full support       |
+| Doubao          | ✅ Full support        | ✅ Full support          | ✅ Full support         | ✅ Full support       |
+| Kimi            | ✅ Full support        | ⚠️ Partial support       | ⚠️ Partial support      | ✅ Full support       |
+| Tongyi Qianwen  | ✅ Full support        | ⚠️ Partial support       | ✅ Full support         | ✅ Full support       |
+| Zhipu Qingyan   | ✅ Full support        | ⚠️ Partial support       | ✅ Full support         | ✅ Full support       |
+| ChatGPT         | ✅ Full support        | ✅ Full support          | ✅ Full support         | ✅ Full support       |
+| Gemini          | ✅ Full support        | ✅ Full support          | ✅ Full support         | ✅ Full support       |
+| Grok            | ✅ Full support        | ⚠️ Partial support       | ✅ Full support         | ✅ Full support       |
+
+---
+
+## 🔌 Browser Plugin Ecosystem
+
+Dedicated plugins for different AI platforms provide a more stable export experience:
+
+| Plugin Name         | Key Features                               | Try Now                                                                  |
+|---------------------|--------------------------------------------|--------------------------------------------------------------------------|
+| **Universal Plugin**| Supports all mainstream AI platforms       | [Go](https://www.aiwhaler.com/plugin/)                                  |
+| **DeepSeek Plugin** | One-click export for AI conversations      | [Go](https://deepseek.aiwhaler.com/)                                    |
+| **Doubao Plugin**   | No garbled LaTeX formulas                  | [Go](https://doubao.aiwhaler.com/)                                      |
+| **Gemini Plugin**   | Supports complex Mermaid diagrams          | [Go](https://gemini.aiwhaler.com/)                                      |
+| **ChatGPT Plugin**  | Full support, data security                | [Go](https://chatgpt.aiwhaler.com/)                                     |
+
+After installing the plugin, you can export with one click from the AI conversation page without manual copy-pasting.
+
+---
+
+## 📱 Cross-Platform Support
+
+- 🌐 **Web**: Visit [www.aitoword.chat](https://www.aitoword.chat/)
+- 📲 **App Download**: Search for "AI2Word" in your app store, or visit [AI2Word App](https://apps.apple.com/dz/app/ai2word/id6753907237)
+- 🧩 **Mini Program**: Search for "AI Conversion Assistant" in WeChat
+- 🔌 **Browser Plugin**: Supports Chrome / Edge and other Chromium-based browsers
+
+> Data is synchronized across all platforms, with optional cloud sync of conversion records.
+
+---
+
+## 🔒 Privacy & Security
+
+- **Encrypted Data Storage**: All uploaded content and generated files are encrypted and saved.
+- **Full User Control**: Supports one-click deletion of history and files.
+- **No Abusive Logging**: Only necessary operational logs are recorded; user content is not analyzed.
+- **No Third-Party Sharing**: We never sell or share user data with any third party.
+
+---
+
+## 📝 Quick Start Guide
+
+### 1️⃣ Copy content from an AI platform (using DeepSeek as an example)
+
+- **Web**: Click the **copy button** below the AI response (do not select all and copy manually, as this may cause formatting issues)
+- **Mobile**: Ask the AI to "return content in markdown format", then click the copy button in the top-right corner
+
+### 2️⃣ Paste into AI Conversion Assistant
+
+- Open [AI Conversion Assistant](https://www.aitoword.chat/), paste the content into the input box
+- Or upload a `.md` file directly
+
+### 3️⃣ Choose export format
+
+- Click **Convert to Word** / **Convert to PDF** / **Convert to Excel**
+- Download the file – open it to see a well-formatted document with editable formulas
+
+> 💡 **Tip**: If a formula appears inside a dashed box, click on the box and press the spacebar to remove it.
+
+---
+
+## ❓ Frequently Asked Questions
+
+<details>
+<summary><strong>LaTeX formulas appear garbled after conversion?</strong></summary>
+
+AI Conversion Assistant supports all standard LaTeX formulas. If you encounter garbled characters for specific symbols, please contact customer support with the original code. We usually fix the issue within 1 business day.
+</details>
+
+<details>
+<summary><strong>Mermaid flowchart generation fails?</strong></summary>
+
+Please check whether the original Mermaid syntax is correct. AI Conversion Assistant automatically fixes common formatting issues. If it still fails, please contact technical support.
+</details>
+
+<details>
+<summary><strong>Exported Excel file is empty?</strong></summary>
+
+AI Conversion Assistant automatically extracts tables from the text. If the original text does not contain a standard table, or if the table format is non-standard, the exported content may be empty. We recommend checking whether the AI response includes a Markdown table.
+</details>
+
+<details>
+<summary><strong>Formulas do not display when previewing a Word file on mobile?</strong></summary>
+
+WeChat Mini Program preview may not support complex formulas. Please use WPS Office or share the file to a computer for viewing.
+</details>
